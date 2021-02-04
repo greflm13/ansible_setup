@@ -9,4 +9,6 @@
     dest: ~/.pureline.conf
 
 - name: clone pureline
-  command: cd; git clone https://github.com/chris-marsh/pureline.git
+  git:
+    repo: https://github.com/chris-marsh/pureline.git
+    dest: ~/pureline
