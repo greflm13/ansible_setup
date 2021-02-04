@@ -1,4 +1,12 @@
-- name: copy bshrc
+- name: copy bashrc
   template: 
     src: .bashrc
     dest: ~/.bashrc
+
+- name: copy pureline config
+  template:
+    src: .pureline.conf
+    dest: ~/.pureline.conf
+
+- name: clone pureline
+  command: cd && git clone https://github.com/chris-marsh/pureline.git
