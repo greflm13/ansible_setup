@@ -1,5 +1,5 @@
 - name: copy bashrc
-  ansible.builtin.template: 
+  ansible.builtin.template:
     src: .bashrc
     dest: ~/.bashrc
 
