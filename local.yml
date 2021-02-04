@@ -1,0 +1,4 @@
+- name: configure user
+  hosts: all
+  roles:
+    - bashrc
