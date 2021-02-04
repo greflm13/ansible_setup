@@ -1,14 +1,14 @@
 - name: copy bashrc
-  template: 
+  ansible.builtin.template: 
     src: .bashrc
     dest: ~/.bashrc
 
 - name: copy pureline config
-  template:
+  ansible.builtin.template:
     src: .pureline.conf
     dest: ~/.pureline.conf
 
 - name: clone pureline
-  git:
+  ansible.builtin.git:
     repo: https://github.com/chris-marsh/pureline.git
     dest: ~/pureline
