@@ -1,4 +1,4 @@
 - name: copy bshrc
   template: 
-    src: bashrc
+    src: .bashrc
     dest: ~/.bashrc
